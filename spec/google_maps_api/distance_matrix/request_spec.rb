@@ -21,7 +21,7 @@ describe GoogleMapsAPI::DistanceMatrix::Request do
     end
 
     it "raises a ResponseError if the response is not successful" do
-      allow(subject.http_adapter).to receive(:get_response).and_return(false)
+      allow_any_instance_of(subject.http_adapter).to receive(:request_get).and_return(false)
       expect { subject.perform }.to raise_error(GoogleMapsAPI::DistanceMatrix::ResponseError)
     end
   end

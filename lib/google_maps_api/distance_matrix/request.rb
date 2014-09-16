@@ -95,9 +95,9 @@ class GoogleMapsAPI::DistanceMatrix::Request
   def sign_uri(uri)
     options = prepared_options
     GoogleMapsAPI::Core::URISigner.sign(
-      uri.to_s, 
-      options[:client], 
-      options[:key], 
+      uri.to_s,
+      options[:client],
+      options[:key],
       options[:channel]
     )
   end
@@ -108,7 +108,7 @@ class GoogleMapsAPI::DistanceMatrix::Request
 
   def arrays_to_coordinate_string(items)
     items.collect do |i|
-      i.respond_to?(:to_ary) ? i.to_ary.join(",") : i 
+      i.respond_to?(:to_ary) ? i.to_ary.join(",") : i
     end
   end
 end
