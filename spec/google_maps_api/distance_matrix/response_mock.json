@@ -14,15 +14,7 @@
         "text": "1 735 km"
       }
     }, {
-      "status": "OK",
-      "duration": {
-        "value": 24487,
-        "text": "6 heures 48 minutes"
-      },
-      "distance": {
-        "value": 129324,
-        "text": "129 km"
-      }
+      "status" : "ZERO_RESULTS"
     } ]
   }, {
     "elements": [ {

@@ -1,4 +1,5 @@
 require "net/http"
+require "date"
 
 class GoogleMapsAPI::DistanceMatrix::Request
   BASE_PATH = "/maps/api/distancematrix/json"
